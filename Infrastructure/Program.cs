@@ -13,7 +13,6 @@ namespace Infrastructure
     {
         public static void Main(string[] args)
         {
-            // trigger build
             CreateHostBuilder(args).Build().Run();
         }
 
