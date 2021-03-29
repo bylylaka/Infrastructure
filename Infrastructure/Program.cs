@@ -13,6 +13,7 @@ namespace Infrastructure
     {
         public static void Main(string[] args)
         {
+            SYNTAX ERROR
             CreateHostBuilder(args).Build().Run();
         }
 
