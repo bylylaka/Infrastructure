@@ -38,7 +38,7 @@ pipeline {
     
      stage('Tests') {
       steps {
-        bat 'dotnet test .\Infrastructure.Tests\'
+        bat 'dotnet test .\\Infrastructure.Tests'
         xunit([xUnitDotNet(excludesPattern: '', pattern: '', stopProcessingIfError: true)])
       }
     }
