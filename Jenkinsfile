@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Checkout') {
                 steps {
-                git 'https://github.com/bylylaka/Infrastructure'
+                    git 'https://github.com/bylylaka/Infrastructure'
             }
         }
         
