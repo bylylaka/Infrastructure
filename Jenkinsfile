@@ -39,7 +39,7 @@ pipeline {
      stage('Tests') {
       steps {
         bat 'dotnet test .\\Infrastructure.Tests'
-        --xunit([xUnitDotNet(excludesPattern: '', pattern: '', stopProcessingIfError: true)])
+        //xunit([xUnitDotNet(excludesPattern: '', pattern: '', stopProcessingIfError: true)])
       }
     }
     
