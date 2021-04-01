@@ -11,7 +11,7 @@ namespace Infrastructure.Tests
         public void AddTest()
         {
             var res = Calculator.Add(5, 7);
-            Assert.Equal(11, res);
+            Assert.Equal(12, res);
         }
 
         [Fact]
