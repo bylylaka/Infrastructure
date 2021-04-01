@@ -35,7 +35,14 @@ pipeline {
         bat 'dotnet build Infrastructure\\Infrastructure.csproj --configuration Release'
       }
     }
-
+    
+     stage('Tests') {
+      steps {
+        bat 'dotnet test .\Infrastructure.Tests\'
+        xunit([xUnitDotNet(excludesPattern: '', pattern: '', stopProcessingIfError: true)])
+      }
+    }
+    
     stage('Publish') {
       steps {
         bat 'dotnet publish Infrastructure\\Infrastructure.csproj'
